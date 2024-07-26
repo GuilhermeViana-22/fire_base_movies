@@ -10,9 +10,9 @@ class DioRepositoryImpl implements IApiRepository {
   DioRepositoryImpl(this._dio);
 
   @override
-  Future<(String?, ApiResponseModel<T>?)> get<T>(String url) async {
+  Future<(String?, ApiResponseModel<T>?)> get<T>(String endPoint) async {
     try {
-      final response = await _dio.get(url,
+      final response = await _dio.get(endPoint,
           options: Options(headers: {
             "Authorization": "Bearer ${DotEnvService.getApiToken}"
           }));
