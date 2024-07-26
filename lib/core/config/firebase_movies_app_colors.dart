@@ -20,5 +20,5 @@ class FirebaseMoviesAppColors {
 
     static Color get whiteColor => const Color(0xffffff);
 
-    static Color get successColor => const Colors.green;
+    static Color get successColor => Color.fromARGB(255, 25, 255, 29);
 }
